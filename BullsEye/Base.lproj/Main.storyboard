@@ -103,6 +103,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="slider" destination="t3J-3Y-wq3" id="kQB-iq-hf1"/>
+                        <outlet property="targetLabel" destination="gd7-SQ-9Qd" id="xxc-94-aIg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
