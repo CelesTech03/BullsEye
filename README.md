@@ -1,5 +1,6 @@
 # Bull's Eye App
 App 1 of the [UIKit Apprentice](https://www.raywenderlich.com/books/uikit-apprentice) book by Fahim Farook & Matthijs Hollemans.
+Material used for iOS Development course.
 
 ## User Stories
 
