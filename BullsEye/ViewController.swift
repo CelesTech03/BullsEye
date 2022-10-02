@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    var currentValue: Int = 0
+    
+    var currentValue = 0
     var targetValue = 0
+    var score = 0
+    var round = 0
     // Special outlet (stores a reference to the slider as a new instance var)
     @IBOutlet var slider: UISlider!
     @IBOutlet var targetLabel: UILabel!
+    @IBOutlet var scoreLabel: UILabel!
+    @IBOutlet var roundLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +26,16 @@ class ViewController: UIViewController {
         // Method to set up everything for first game round
         startNewRound()
     }
-
     
-    // Reads the value of the slider after the user presses the Hit Me! button
+    
+    // Reads the value of the slider after the user presses the Hit Me! button + calculates game score
     @IBAction func showAlert() {
-        let message = "The value of the slider is: \(currentValue)" +
-        "\nThe target value is: \(targetValue)"
+        let difference = abs(currentValue - targetValue) // Absolute value always positive
+        let points = 100 - difference
+        
+        score += points
+        
+        let message = "You scored \(points) points"
         
         let alert = UIAlertController (
             title: "Hello, World",
@@ -53,6 +61,7 @@ class ViewController: UIViewController {
     
     // Starts a new game round
     func startNewRound() {
+        round += 1
         targetValue = Int.random(in: 1...100)
         currentValue = lroundf(slider.value)
         // Type conversion, compiler converts currentValue int to float for slider
@@ -63,6 +72,8 @@ class ViewController: UIViewController {
     // Updates the contents of the labels
     func updateLabels() {
         targetLabel.text = String(targetValue)
+        scoreLabel.text = String(score)
+        roundLabel.text = String(round)
     }
 }
 
