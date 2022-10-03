@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA33612E28EB3B8500676945 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = AA33612D28EB3B8500676945 /* BullsEye.html */; };
 		AAA1B8F028E63E8100A7297D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1B8EF28E63E8100A7297D /* AppDelegate.swift */; };
 		AAA1B8F228E63E8100A7297D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1B8F128E63E8100A7297D /* SceneDelegate.swift */; };
 		AAA1B8F428E63E8100A7297D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1B8F328E63E8100A7297D /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA33612D28EB3B8500676945 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		AAA1B8EC28E63E8100A7297D /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA1B8EF28E63E8100A7297D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA1B8F128E63E8100A7297D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		AAA1B8EE28E63E8100A7297D /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				AA33612D28EB3B8500676945 /* BullsEye.html */,
 				AAA1B8EF28E63E8100A7297D /* AppDelegate.swift */,
 				AAA1B8F128E63E8100A7297D /* SceneDelegate.swift */,
 				AAA1B8F328E63E8100A7297D /* ViewController.swift */,
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA1B8FC28E63E8100A7297D /* LaunchScreen.storyboard in Resources */,
+				AA33612E28EB3B8500676945 /* BullsEye.html in Resources */,
 				AAA1B8F928E63E8100A7297D /* Assets.xcassets in Resources */,
 				AAA1B8F728E63E8100A7297D /* Main.storyboard in Resources */,
 			);
@@ -294,6 +298,7 @@
 				DEVELOPMENT_TEAM = MATAH478GH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BullsEye/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bull's Eye";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,6 +326,7 @@
 				DEVELOPMENT_TEAM = MATAH478GH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BullsEye/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bull's Eye";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

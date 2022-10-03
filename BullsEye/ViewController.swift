@@ -100,7 +100,7 @@ class ViewController: UIViewController {
     func startNewRound() {
         round += 1
         targetValue = Int.random(in: 1...100)
-        currentValue = lroundf(slider.value)
+        currentValue = 50
         // Type conversion, compiler converts currentValue int to float for slider
         slider.value = Float(currentValue)
         updateLabels()
@@ -111,6 +111,13 @@ class ViewController: UIViewController {
         score = 0
         round = 0
         startNewRound()
+        // Crossfade (subtle animation)
+        let transition = CATransition()
+        transition.type = CATransitionType.fade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(
+            name: CAMediaTimingFunctionName.easeOut)
+        view.layer.add(transition, forKey: nil)
     }
     
     // Updates the contents of the labels
@@ -120,4 +127,3 @@ class ViewController: UIViewController {
         roundLabel.text = String(round)
     }
 }
-

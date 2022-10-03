@@ -6,13 +6,28 @@
 //
 
 import UIKit
+// Tells compiler that I want to use objects from the WebKit framework
+import WebKit
 
 class AboutViewController: UIViewController {
+    
+    @IBOutlet var webView: WKWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        // Displays the HTML file using the web view
+        if let url = Bundle.main.url(
+            forResource: "BullsEye", withExtension: "html") {
+            let request = URLRequest(url: url)
+            webView.load(request)
+        }
+    }
+    
+    // Closes about section once button is pressed
+    @IBAction func close() {
+        dismiss(animated: true, completion: nil)
     }
     
 
