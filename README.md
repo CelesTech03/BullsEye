@@ -15,4 +15,9 @@ The following functionality is completed:
 - [x] Compare the value of the slider to that random number and calculate a score based on how far off the player is. You show this score in the alert pop-up.
 - [x] Put the Start Over button on the screen. Make it reset the score and put the player back to the first round.
 - [x] Put the app in landscape orientation.
-- [ ] Make it look pretty
+- [x] Make it look pretty
+
+## Video Walkthrough
+Here's a walkthrough of implemented user stories:
+### iPhone 11 Pro
+https://user-images.githubusercontent.com/57969388/193643187-d62a9696-1824-49be-ab83-3be30b899a01.mov
