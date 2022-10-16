@@ -7,16 +7,12 @@ Material used for iOS Development course.
 
 The following functionality is completed:
 
-- [x] Put a button on the screen and label it “Hit Me!
-- [x] When the player presses the Hit Me! button, the app has to show an alert pop-up to inform the player how well he or she did. Somehow, you have to calculate the score and put that into this alert.
-- [x] Put text on the screen, such as the “Score:” and “Round:” labels. Some of this text changes over time; for example, the score, which increases when the player scores points.
-- [x] Put a slider on the screen with a range between the values 1 and 100.
-- [x] Read the value of the slider after the user presses the Hit Me! button.
-- [x] Generate a random number at the start of each round and display it on the screen. This is the target value.
-- [x] Compare the value of the slider to that random number and calculate a score based on how far off the player is. You show this score in the alert pop-up.
-- [x] Put the Start Over button on the screen. Make it reset the score and put the player back to the first round.
-- [x] Put the app in landscape orientation.
-- [x] Make it look pretty
+- [x] User can tap the info. button to get a description of the game
+- [x] User can view his or her score, number of rounds, and target number
+- [x] User can use the slider to guess a number between the values 1 and 100
+- [x] User can press the Hit Me! button and an alert pop-up informs the user how well he or she did
+- [x] User will get extra points for landing on the target number or being one value away
+- [x] User can start the game over. Resets the score
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
